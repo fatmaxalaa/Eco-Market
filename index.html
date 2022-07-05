@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=The+Nautigal:wght@700&display=swap"
+                rel="stylesheet">
+</head>
+<body>
+        
+        <section class="navBar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                        <div class="container">
+                       
+                                <a class="navbar-brand LogoIcon" href="#">
+                                        <span>Eco-Market</span> <i class="fa-brands fa-pagelines ms-1 fs-5 text-success "></i>
+                                </a>
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-center ">
+                                                <li class="nav-item ms-3">
+                                                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                                                </li>
+                                                <li class="nav-item  ms-3">
+                                                        <a class="nav-link" href="./About.html">About Us</a>
+                                                </li>
+                                                <li class="nav-item dropdown  ms-3">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Shop
+                                                        </a>
+                                                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="#">Women</a></li>
+                                                                <li><a class="dropdown-item" href="#">Men</a></li>      
+                                                                <li><a class="dropdown-item" href="#">Kids (4-14 Years)</a></li>
+                                                                <li><a class="dropdown-item" href="#">Baby (0-5 Years)</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li class="nav-item ms-3">
+                                                        <a class="nav-link   ">Purchase Guide</a>
+                                                </li>
+                                                <li class="nav-item ms-3">
+                                                        <a class="nav-link  " href="./Contact.html">Contact Us</a>
+                                                </li>
+                                        </ul> 
+ 
+                                        <form class="d-flex mt-2 justify-content-center">
+                                                <button type="button" class="  me-md-4 d-inline-block text-center signBttn  " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        SignUp
+                                                </button>
+                                                
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" modal-backdrop="false">
+                                                        <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                                <h5 class="modal-title" id="exampleModalLabel">CREATE AN ACCOUNT</h5>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                        aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+
+                                                                                <form>
+                                                                                        <div class="form-group mt-3">
+                                                                                                <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                                                                        placeholder="Your Name">
+                                                                                        </div>
+
+
+                                                                                        <div class="form-group">
+                                                                                             
+                                                                                                <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                                                                        placeholder="Your Email">
+                                                                                              
+                                                                                        </div>
+
+                                                                                        <div class="form-group">
+                                                                                                
+                                                                                                <input type="password" class="form-control mb-3" id="exampleInputPassword1" placeholder="Password">
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                                
+                                                                                                <input type="password" class="form-control mb-3" id="exampleInputPassword1" placeholder="Repeat Your Password">
+                                                                                        </div>
+
+
+                                                                                        
+                                                                                        <div class="form-check d-flex  mb-4 mt-4">
+                                                                                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                                                                                                <label class="form-check-label" for="form2Example3g">
+                                                                                                I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                                                                                                </label>
+                                                                                        </div>
+                                                                                    
+
+                                                                                        <button type="submit" class="btn btn-primary w-100 ">Submit</button>
+
+                                                                                                <hr class="my-4">
+                                                                                                <p class="text-center">or sign up with:</p>
+                                                                                                <button class="btn btn-lg btn-block btn-primary w-100 fs-6" style="background-color: #dd4b39;" type="submit"><i
+                                                                                                                class="fab fa-google me-2"></i> Sign up with google</button>
+                                                                                                <button class="btn btn-lg btn-block btn-primary mb-2 w-100 fs-6 mt-3" style="background-color: #3b5998;" type="submit"><i
+                                                                                                                class="fab fa-facebook-f me-2"></i>Sign up with facebook</button>
+                                                                                </form>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div> 
+                                        </form>
+                                        <form class="d-flex  justify-content-center signForm pb-md-0 pb-3">
+                                                <button type="button" class=" signBttn me-md-4 mt-m0 mt-2   " data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal2">
+                                                        LogIn
+                                                </button>
+                                                
+                                                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+                                                        modal-backdrop="false">
+                                                        <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                                <h5 class="modal-title" id="exampleModalLabel">LOGIN </h5>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                        aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                
+                                                                                <form>
+                                                
+                                                
+                                                
+                                                                                        <div class="form-group">
+                                                
+                                                                                                <input type="email" class="form-control mb-3" id="exampleInputEmail1"
+                                                                                                        aria-describedby="emailHelp" placeholder=" Email">
+                                                
+                                                                                        </div>
+                                                
+                                                                                        <div class="form-group">
+                                                
+                                                                                                <input type="password" class="form-control mb-3"
+                                                                                                        id="exampleInputPassword1" placeholder="Password">
+                                                                                        </div>
+                                                
+                                                                                        <div class="form-check d-flex justify-content-start mb-4">
+                                                                                                <input class="form-check-input me-2" type="checkbox" value=""
+                                                                                                        id="form1Example3" />
+                                                                                                <label class="form-check-label" for="form1Example3"> Remember password
+                                                                                                </label>
+                                                                                        </div>
+                                                                                        <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                                                                                        <hr class="my-4">
+                                                                                        <p class="text-center">or Sign in with:</p>
+                                                                                        <button class="btn btn-lg btn-block btn-primary w-100 fs-6"
+                                                                                                style="background-color: #dd4b39;" type="submit"><i
+                                                                                                        class="fab fa-google me-2"></i> Sign in with google</button>
+                                                                                        <button class="btn btn-lg btn-block btn-primary mb-2 w-100 fs-6 mt-3"
+                                                                                                style="background-color: #3b5998;" type="submit"><i
+                                                                                                        class="fab fa-facebook-f me-2"></i>Sign in with
+                                                                                                facebook</button>
+                                                                                </form>
+                                                
+                                                
+                                                                        </div>
+                                                
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </form>
+                                        <div class="sound  text-center me-5 pb-3 mt-3">
+                                                <span><i class="fa-brands fa-soundcloud" id="icon"></i></span>
+                                                <span>Sound <span class="off" id="off" onClick="togglePlay()">OFF</span></span>
+                                        </div>
+                                        <audio id="myAudio" src="./audio/both-of-us-14037.mp3">
+                                        </audio>
+                                </div>
+                        </div>
+                </nav>
+
+        </section>
+
+        <!-- slider -->
+        <section class="sliderSec container mt-5">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                  
+                                        <div class="carousel-item  ">
+                                                <div class="row align-items-center">
+                                                        <div class=" col-md-5 col-12">
+                                                                <h3 class="mb-3">hot promotions</h3>
+                                                                <h2 class="trend">fashion trending</h2>
+                                                                <h1 class="collec">great collection</h1>
+                                                                <p class="prag">save more with coupons & up to 20% off</p>
+                                                                <button class="sliderBtn">discover now</button>
+                                                        </div>
+                                                        <div class="col-md-7 col-12">
+                                                                <img src="./images/slider1.jpg" class="d-block mt-4 ">
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="carousel-item   active ">
+                                                <div class="row align-items-center">
+                                                        <div class=" col-md-5 col-12">
+                                                                <h3 class="mb-3">Trade-in offer</h3>
+                                                                <h2 class="trend">supper value deals</h2>
+                                                                <h1 class="collec sliderText2">on all products</h1>
+                                                                <p class="prag">save more with coupons & up to 20% off</p>
+                                                                <button class="sliderBtn sliderBtn2 ">shop now</button>
+                                                        </div>
+                                                        <div class="col-md-7 col-12 mt-4">
+                                                                <img src="./images/slider22.jpg" class="d-block ">
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="carousel-item   ">
+                                                <div class="row align-items-center">
+                                                        <div class=" col-md-5 col-12">
+                                                                <h3 class="mb-3">Upcoming Offer</h3>
+                                                                <h2 class="trend">Big deal from</h2>
+                                                                <h1 class="collec sliderText3">Manufacturer</h1>
+                                                                <p class="prag">Clothing,Shoes,Bags,Wallets....</p>
+                                                                <button class="sliderBtn sliderBtn3">Shop now</button>
+                                                        </div>
+                                                        <div class="col-md-7 col-12 mt-4">
+                                                                <img src="./images/slider3.png" class="d-block ">
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                               
+                               
+                        </div>
+
+                        <button class="carousel-control-prev prevBtn" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next nextBtn" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+        </section>
+        <!-- End of slider -->
+
+        <!-- features -->
+        <section class="features container mt-5">
+                <div class="row justify-content-center">
+                        
+                        <div class="col-md-4 col-lg-2 col-6  text-center  mt-3">
+                                <div class="m-2  featureCard p-3">
+                                        <img src="./images/FreeShipping.png" width="160px">
+                                        <a class="mt-4 caredParag mt-3 d-inline-block">Free Shipping</a>
+                                </div>
+                        </div>  
+                        <div class="col-md-4 col-lg-2 col-6 text-center  mt-3">
+                                <div class="m-2  featureCard p-3 ">
+                                        <img src="./images/order2.png" class="mb-2"  width="150px">
+                                        <a class="mt-4 caredParag2 mt-4 d-inline-block">Online Order</a>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2  col-6  text-center mt-3">
+                                <div class="m-2  featureCard p-3">
+                                        <img src="./images/Saving-Money-Vector.jpg" width="160px">
+                                        <a class="mt-4 caredParag3 mt-3 d-inline-block">Saving Money</a>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 col-6   text-center  mt-3">
+                                <div class="m-2  featureCard p-3 ">
+                                        <img src="./images/sellhappy.webp" width="100px" height="95px">
+                                        <a class="mt-4 caredParag4 mt-3 d-inline-block">Happy Sell</a>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2  col-6  text-center mt-3">
+                                <div class="m-2  featureCard p-3">
+                                        <img src="./images/Customer-service-support.jpg" width="150px">
+                                        <a class="mt-4 caredParag5 mt-3 d-inline-block">24/7 Support</a>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2  col-6  text-center  mt-3">
+                                <div class="m-2  featureCard p-3">
+                                        <img src="./images/pprom.png" width="150px" height="100px">
+                                        <a class="mt-4 caredParag6 mt-3 d-inline-block">Promotions</a>
+                                </div>
+                                
+                        </div>
+                     
+                        
+                </div>
+        </section>
+        <!-- end of features -->
+
+        <!-- collection -->
+        <section class="collection container mt-5">
+                <div>
+                        <button class="collecBtn">Featured</button>
+                        <button class="collecBtn2">Popular</button>
+                        <button class="collecBtn2">New added</button>
+                </div>
+                <div class="row mt-5">
+                        <div class="col-md-6 col-lg-3 col-12 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center img">
+                                                <img src="./images/collec1.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Clothing</p>
+                                                <h5 class="collecParag">Colorful Pattern Shirts</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$238.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$245.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag">Hot</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                               
+
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-3 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec2.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Clothing</p>
+                                                <h5 class="collecParag">Flowers Sleeve Lapel Shirt</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$138.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$255.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag2">New</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                               
+
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-3  mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec3.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Clothing</p>
+                                                <h5 class="collecParag">Vintage Floral Oil Shirts</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$338.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$445.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag3">Best Sell</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                               
+
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-3 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec4.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Clothing</p>
+                                                <h5 class="collecParag">Colorful Hawaiian Shirts</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$138.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$245.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag4">Sale</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                               
+
+                        </div>
+                </div>
+
+                <div class="row mt-5">
+                        <div class="col-md-6 col-lg-3 col-12 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec5.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Clothing</p>
+                                                <h5 class="collecParag">Flowers Sleeve Lapel Shirt</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$38.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$145.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag5">-30%</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                
+                
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-12 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec6.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Shirt</p>
+                                                <h5 class="collecParag">Ethnic Floral Casual Shirts</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$48.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$255.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag5">-22%</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                
+                
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-12 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec7.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Shoes</p>
+                                                <h5 class="collecParag">Stitching Hole Sandals</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$128.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$445.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag2">New</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                
+                
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-12 mt-2">
+                                <div class="collecCard">
+                                        <div class="text-center">
+                                                <img src="./images/collec8.jpg" alt="collec1" class="mt-3">
+                                        </div>
+                                        <div class="text ms-3">
+                                                <p class="mt-2 text-secondary">Clothing</p>
+                                                <h5 class="collecParag">Mens Porcelain Shirt</h5>
+                                                <p class="collecReview"><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                </p>
+                                                <p class="collecPrice">$238.85 <span
+                                                                class="text-secondary text-decoration-line-through d-inline-block me-3 fw-light fs-6">$245.8</span>
+                                                </p>
+                                        </div>
+                                        <p class="collecTag4">Sale</p>
+                                        <div class="collecIcons">
+                                                <i class="fa-solid fa-eye icon"></i>
+                                                <i class="fa-solid fa-heart ms-3 icon"></i>
+                                                <i class="fa-solid fa-code-compare ms-3 icon"></i>
+                                        </div>
+                                </div>
+                
+                
+                        </div>
+                </div>
+        </section>
+       
+        <!-- End of collection -->
+
+        <!-- Catagories -->
+        <section class="catagories container mt-5">
+                <p class="catagParag">Popular <span>Catagories</span></p>
+                <div class="row">
+                        <div class="col-lg-2 col-md-6  col-6 mt-3">
+                                        <div class="catagCard">
+                                                <div class="text-center">
+                                                        <img src="./images/collec1.jpg" width="174px" height="174px" class="mt-2">
+                                                </div>
+                                                <h6 class="text-center mt-3">T-Shirt</h6>
+                                        </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6  col-6 mt-3">
+                                        <div class="catagCard">
+                                                <div class="text-center">
+                                                        <img src="./images/catag2.jpg" width="174px" height="174px" class="mt-2">
+                                                </div>
+                                                <h6 class="text-center mt-3">Sandals</h6>
+                                        </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6  col-6 mt-3">
+                                        <div class="catagCard">
+                                                <div class="text-center">
+                                                        <img src="./images/catag3.jpg" width="174px" height="174px" class="mt-2">
+                                                </div>
+                                                <h6 class="text-center mt-3">Pillows</h6>
+                                        </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6  col-6 mt-3">
+                                        <div class="catagCard">
+                                                <div class="text-center">
+                                                        <img src="./images/catag4.jpg" width="174px" height="174px" class="mt-2">
+                                                </div>
+                                                <h6 class="text-center mt-3">Scarf</h6>
+                                        </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6  col-6 mt-3">
+                                        <div class="catagCard">
+                                                <div class="text-center">
+                                                        <img src="./images/catag5.jpg" width="174px" height="174px" class="mt-2">
+                                                </div>
+                                                <h6 class="text-center mt-3">Hats</h6>
+                                        </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6  col-6 mt-3">
+                                        <div class="catagCard">
+                                                <div class="text-center">
+                                                        <img src="./images/catag6.jpg" width="174px" height="174px" class="mt-2">
+                                                </div>
+                                                <h6 class="text-center mt-3">Bags</h6>
+                                        </div>
+                        </div>
+                      
+                </div>
+        </section>
+        <!-- End of Catagories -->
+
+        <!-- offers -->
+        <section class="offers container mt-5">
+                <div class="row justify-content-center">
+                        <div class="col-md-6 col-12 mt-3 col-lg-4">
+                                <div class="offerCard">
+                                                <div class="offerBg">
+                                                        <img src="./images/offer1.png" width="416px" height="177px">
+                                                        <div class="offerText ms-4">
+                                                                <p class="text-secondary">Sale off</p>
+                                                                <h5>Great Summer <br> Collection</h5>
+                                                                <a href="#" class="offerlink mt-3">Shop Now <i class="fa-solid fa-arrow-right"></i> </a>
+                                                        </div>
+                                                </div>
+                                </div>
+                        </div>
+
+                        <div class="col-md-6 col-12 mt-3 col-lg-4">
+                                <div class="offerCard">
+                                        <div class="offerBg">
+                                                <img src="./images/offer2.png" width="416px" height="177px">
+                                                <div class="offerText ms-4">
+                                                        <p class="text-secondary">Smart off </p>
+                                                        <h5>Save 20% on
+                                                         <br> Woman Bag</h5>
+                                                        <a href="#" class="offerlink mt-3">Shop Now <i class="fa-solid fa-arrow-right"></i> </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-md-6 col-12 mt-3 d-none col-lg-4 d-xxl-block">
+                                <div class="offerCard">
+                                        <div class="offerBg">
+                                                <img src="./images/offer3.png" width="416px" height="177px">
+                                                <div class="offerText ms-4">
+                                                        <p class="text-secondary">New Arrivals </p>
+                                                        <h5>Shop Today’s
+                                                        <br>Deals & Offers
+                                                        </h5>
+                                                        <a href="#" class="offerlink mt-3">Shop Now <i class="fa-solid fa-arrow-right"></i> </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </section>
+        <!-- end of offers -->
+
+        <!-- countdown -->
+        <section class=" container mt-5">
+                <div class="row">
+                        <div class=" countDownSec col-md-6 col-12 mt-3 ">
+                                
+                                        <img src="./images/count1.jpg"  class="img-fluid ">
+                                        <div class="countText pb-5">
+                                                <h4>Deal of the Day</h4>
+                                                <p>Limited quantities.</p>
+                                                <p class="fs-4">Summer Collection New <br> Morden Design </p>
+                                                <p class="text-danger fs-4">$139.00 <span class="fs-5 text-secondary text-decoration-line-through">$160.99</span></p>
+                                                <p>Hurry Up! Offer End In:</p>
+                                                <div class="countDown mt-4">
+                                                        <div class="dayContainer">
+                                                                <h3 class="day">Time</h3>
+                                                                <p>Days</p>
+                                                        </div>
+                                                
+                                                        <div class="hourContainer">
+                                                                <h3 class="hour">Time</h3>
+                                                                <p>Hours</p>
+                                                        </div>
+                                                
+                                                        <div class="minuteContainer">
+                                                                <h3 class="minute">Time</h3>
+                                                                <p>Minutes</p>
+                                                        </div>
+                                                
+                                                        <div class="secondContainer">
+                                                                <h3 class="second">Time</h3>
+                                                                <p>Seconds</p>
+                                                        </div>
+                                                </div>
+
+                                                <button class="countBtn mt-2">Shop Now</button>
+
+                                        </div>
+                        </div>
+
+                        <div class=" countDownSec col-md-6 col-12 mt-3">
+                                
+                                        <img src="./images/count2.jpg" width="636px" height="480px" class="img-fluid">
+                                        <div class="countText">
+                                                <h4>Men Clothing</h4>
+                                                <p>Shirt & Bag</p>
+                                                <p class="fs-4">Try something new on <br> vacation </p>
+                                                <p class="text-danger fs-4">$139.00 <span
+                                                                class="fs-5 text-secondary text-decoration-line-through">$178.00</span></p>
+                                                <p>Hurry Up! Offer End In:</p>
+                                                <div class="countDown mt-4">
+                                                        <div class="dayContainer">
+                                                                <h3 class="day2">Time</h3>
+                                                                <p>Days</p>
+                                                        </div>
+                                
+                                                        <div class="hourContainer">
+                                                                <h3 class="hour2">Time</h3>
+                                                                <p>Hours</p>
+                                                        </div>
+                                
+                                                        <div class="minuteContainer">
+                                                                <h3 class="minute2">Time</h3>
+                                                                <p>Minutes</p>
+                                                        </div>
+                                
+                                                        <div class="secondContainer">
+                                                                <h3 class="second2">Time</h3>
+                                                                <p>Seconds</p>
+                                                        </div>
+                                                </div>
+                                                <button class="countBtn mt-2">Shop Now</button>
+                                        </div>
+                        </div>
+                </div>
+        </section>
+        <!-- End of countdown -->
+
+        <!-- Contact -->
+        <section class="contact container-fluid mt-5">
+                <div class="container mt-4">
+                        <div class="row text-center ">
+                                <div class="col-lg-4 col-12 mt-3">
+                                        <i class="fa-solid fa-envelope fs-4 me-3"></i>
+                                        <span class="ms-2 fs-5 fw-bold">Sign up to Newsletter</span> 
+                                </div>
+                                <div class="col-lg-4 col-12 mt-3">
+                                      <span class="mt-3 fw-bold">...and receive $25 coupon for first shopping.</span> 
+                                </div>
+                                <div class="col-lg-4 col-12 mt-3">
+                                        <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter your Email"
+                                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                <button class="btn btn-dark" type="button" id="button-addon2">Subscribe</button>
+                                        </div>
+                        
+                                </div>
+                        </div>
+                </div>
+                
+        </section>
+        <!-- End of Contact -->
+
+        <!-- Footer -->
+        <footer class="container mt-5 text-md-start text-center">
+                <div class="row">
+                        <div class="col-md-3 col-12">
+                                <!-- <img src="" alt=""> -->
+                                <div class="navbar-brand LogoIcon mt-2 ms-4 ms-lg-0 " href="#">
+                                        <span >Eco-Market</span> <i class="fa-brands fa-pagelines ms-1 fs-5 text-success "></i>
+                                </div>
+                                <p class=" fw-bold mt-2">Contact:</p>
+                                <p class="fw-bold">Address: <span class="fw-normal">562 Wellington,San Francisco</span></p>
+                                <p class="fw-bold">Phone: <span class="fw-normal">+01 2222 365 /(+91) 01 2345 6789</span></p>
+                                <p class="fw-bold">Hours: <span class="fw-normal">10:00 - 18:00, Mon - Sat</span></p>
+
+                                <p class="text-secondary fw-bold">Follow us </p>
+                                <p class="text-secondary">
+                                        <i class="fa-brands fa-facebook-f me-3"></i>
+                                        <i class="fa-brands fa-twitter me-3"></i>
+                                        <i class="fa-brands fa-instagram me-3"></i>
+                                        <i class="fa-brands fa-pinterest-p me-3"></i>
+                                        <i class="fa-brands fa-youtube"></i>
+                                </p>
+                        </div>
+
+                        <div class="col-md-3 col-12 mt-4">
+                                <h5 class="ms-4 mb-3">About</h5>
+                                <ul>
+                                        <li>
+                                                <a href="#" >About us</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Delivery Information</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Terms & Conditions</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Contact Us</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Support Center</a>
+                                        </li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-3 col-12 mt-4">
+                                <h5 class="ms-4 mb-3">My Account</h5>
+                                <ul>
+                                        <li>
+                                                <a href="#">Sign In</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">View Cart</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">My Wishlist</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Track My Order</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Help</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">Order</a>
+                                        </li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-3 col-12 mt-4">
+                                <h5 class="mb-3">Install App</h5>
+                                <p>From App Store or Google Play</p>
+                                <button class="btn btn-outline-success mt-3 "><img src="./images/app-store.jpg" alt="app-store"></button>
+                                <button  class="btn btn-outline-success mt-3"><img src="./images/google-play.jpg" alt="google-play"></button>
+                                <p class="mt-3">Secured Payment Gateways</p>
+                                <img src="./images/payment-method.png" alt="Payment">
+                        </div>
+                </div>
+                 <hr class="mt-5 text-secondary">
+                 <p class="mt-3">© 2022, <span class="text-success">Fatma Alaaeldin</span> - EraaSoft Graduation Project</p>
+        </footer>
+        <!-- End of Footer -->
+
+        <button onclick="scrollToTop()" class="scroll-top">
+                <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+</html>
